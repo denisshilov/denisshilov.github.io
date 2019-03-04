@@ -1,0 +1,112 @@
+.footer-section {
+  background-color: #f8f8f8;
+  border-top: 1px solid #d8d8d8;
+}
+
+.footer-container {
+  padding: 56px 60px 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+.footer-container__form-block {
+  width: 25%;
+}
+.footer-container__form-title {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #37c491;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  font-family: "Nunito", sans-serif;
+}
+.footer-container__form-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container__form-input {
+  border: none;
+  border-bottom: 3px solid #089bd9;
+  font-family: "Nunito", sans-serif;
+  padding: 5px 0 5px 10px;
+  outline: 0;
+  width: 100%;
+  text-transform: capitalize;
+  margin: 5px 0;
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 14px;
+}
+.footer-container__form-input:invalid {
+  border: none;
+  border-bottom: 3px solid #37c491;
+  box-shadow: none;
+}
+.footer-container__form-btn {
+  border: 3px solid #37c491;
+  margin-top: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #37c491;
+  outline: none;
+  width: 100%;
+}
+.footer-container__form-btn:hover {
+  border: 3px solid #089bd9;
+  background-color: #089bd9;
+  color: #f8f8f8;
+}
+.footer-container__form-btn:hover .footer-container__form-btn_create {
+  display: none;
+}
+.footer-container__form-btn:hover .footer-container__form-btn_act {
+  display: block;
+}
+.footer-container__form-btn_act {
+  display: none;
+}
+.footer-container__nav-block {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.footer-container__nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-container__nav-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4e5665;
+  margin-bottom: 4px;
+}
+.footer-container__nav-title_togle {
+  display: none;
+}
+.footer-container__nav-child-link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  color: #505050;
+  padding: 4px 0;
+}
+.footer-container__nav-child-link:hover {
+  color: #089bd9;
+}
+
+/*# sourceMappingURL=style.css.map */

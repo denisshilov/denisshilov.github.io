@@ -1,0 +1,475 @@
+@import "variables";
+@import "mixin";
+
+.main-content {
+  &__wrapper {
+    @include flex-column;
+    align-items: center;
+    padding: 64px 25px 91px 25px;
+  }
+
+  &__title {
+    text-align: center;
+    color: #315479;
+    font-size: 32px;
+    line-height: 43px;
+    max-width: 630px;
+    width: 100%;
+  }
+
+  &__sales-section {
+    background-color: $bgc-second;
+  }
+
+  &__sales-block {
+    @include flex-column;
+    align-items: center;
+  }
+
+  &__title-sales {
+    text-align: center;
+    max-width: 708px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-top: 63px;
+    margin-bottom: 26px;
+  }
+
+  &__description-sales {
+    color: #d2e7fb;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.64px;
+    margin-bottom: 38px;
+  }
+
+  &__btn {
+    width: 246px;
+    height: 60px;
+    margin-bottom: 64px;
+  }
+}
+
+.workflow-description {
+  width: 100%;
+  @include flex-central-horizontal;
+  margin-top: 56px;
+
+  &__content {
+    width: 50%;
+
+    &_first_block_padding {
+      padding: 32px 0 0 71px;
+    }
+
+    &_second_block_padding {
+      padding: 9px 0 0 101px;
+      order: 1;
+    }
+  }
+
+  &__title {
+    color: #315479;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 31px;
+    margin-bottom: 33px;
+    font-weight: 400;
+  }
+
+  &__text {
+    color: #677482;
+    font-size: 21px;
+    letter-spacing: -0.8px;
+    line-height: 33px;
+    margin-top: 7px;
+    margin-bottom: 38px;
+    max-width: 402px;
+    width: 100%;
+  }
+
+  &__visual-description {
+    width: 50%;
+
+    &_first_block_padding {
+      padding-right: 68px;
+    }
+
+    &_second_block_padding {
+      padding: 14px 63px 0 61px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.reviews-section {
+  padding-top: 119px;
+
+  &__title {
+    text-align: center;
+    color: #315479;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    margin-bottom: 70px;
+  }
+
+  &__comments-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 30px;
+  }
+
+  &__comments-block {
+    width: 31.5%;
+  }
+
+  &__content {
+    padding: 32px 37px 43px 19px;
+    position: relative;
+    background-color: #158af4;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 19px;
+
+    &:before {
+      @include before;
+      bottom: 0;
+      width: 84px;
+      height: 68px;
+      background-color: #158af4;
+      left: 10px;
+      transform: rotate(-28deg);
+    }
+  }
+
+  &__quote {
+    max-width: 25px;
+    width: 100%;
+    margin-right: 8px;
+  }
+
+  &__quote-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__comment {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 25px;
+    z-index: 1;
+  }
+
+  &__client-name {
+    color: #315479;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    line-height: 22px;
+    display: block;
+  }
+
+  &__product-company {
+    color: #677482;
+    letter-spacing: -0.56px;
+    line-height: 23px;
+  }
+}
+
+@include large {
+  .main-content {
+    &__wrapper{
+      padding: 44px 25px 61px 25px;
+    }
+    &__title-sales {
+      margin-top: 47px;
+      margin-bottom: 19px;
+      font-size: 28px;
+    }
+    &__description-sales {
+      margin-bottom: 21px;
+    }
+    &__btn {
+      margin-bottom: 44px;
+    }
+  }
+  .workflow-description {
+    &__content_first_block_padding {
+      padding: 25px 0 0 32px;
+    }
+
+    &__visual-description_first_block_padding {
+      padding-right: 25px;
+    }
+
+    &__visual-description_second_block_padding {
+      padding: 14px 31px 0 29px;
+    }
+
+    &__content_second_block_padding {
+      padding: 9px 0 0 48px;
+    }
+
+    &__title {
+      margin-bottom: 22px;
+      font-size: 21px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 21px;
+    }
+  }
+  .reviews-section {
+    padding-top: 78px;
+
+    &__title {
+      font-size: 34px;
+      margin-bottom: 50px;
+    }
+
+    &__comments-section {
+      padding: 0;
+    }
+
+    &__content {
+      padding: 15px 11px 16px 9px;
+    }
+
+    &__quote {
+      max-width: 17px;
+      margin-right: 5px;
+    }
+
+    &__comment {
+      font-size: 15px;
+    }
+  }
+}
+@include tablet {
+  .main-content {
+    &__wrapper{
+      padding: 32px 15px 41px 15px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+      max-width: 545px;
+    }
+    &__title-sales {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 25px;
+    }
+    &__description-sales {
+      margin-bottom: 15px;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+    &__btn {
+      margin-bottom: 24px;
+    }
+  }
+  .workflow-description {
+    &__content_first_block_padding {
+      padding: 15px 15px 0 0;
+    }
+
+    &__visual-description_first_block_padding {
+      padding-right: 0;
+    }
+
+    &__visual-description_second_block_padding {
+      padding: 8px 0 0 15px;
+    }
+
+    &__content_second_block_padding {
+      padding: 4px 0 0 15px;
+    }
+
+    &__title {
+      margin-bottom: 14px;
+      font-size: 19px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  .reviews-section {
+    padding-top: 48px;
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    &__comments-section {
+      padding: 0;
+    }
+
+    &__content {
+      padding: 8px 7px 8px 6px;
+    }
+
+    &__quote {
+      max-width: 13px;
+      margin-right: 5px;
+    }
+
+    &__comment {
+      font-size: 12px;
+    }
+  }
+}
+@include mobile{
+  .main-content {
+    &__wrapper{
+      padding: 22px 10px 31px 10px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__title-sales {
+      margin-top: 37px;
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+    &__description-sales {
+      margin-bottom: 30px;
+      font-size: 14px;
+      text-align: center;
+    }
+    &__btn {
+      margin-bottom: 24px;
+      background-color: #9addfc;
+      color: #345477;
+      &:before {
+        background-color: #6da5c4;
+      }
+    }
+  }
+  .workflow-description {
+    flex-direction: column;
+    &__content{
+      width: 100%;
+      &_second_block_padding {
+        order: 0;
+      }
+    }
+    &__visual-description{
+      width: 100%;
+    }
+    &__content_first_block_padding {
+      padding: 15px 0;
+    }
+
+    &__visual-description_first_block_padding {
+      padding: 0;
+    }
+
+    &__visual-description_second_block_padding {
+      padding:0;
+    }
+
+    &__content_second_block_padding {
+      padding: 15px 0;
+    }
+
+    &__title {
+      margin-bottom: 14px;
+      font-size: 19px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 85%;
+      font-size: 16px;
+      margin: 0 auto 15px auto;
+    }
+  }
+  .reviews-section {
+    padding-top: 48px;
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    &__comments-section {
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+    }
+    &__comments-block {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+
+    &__content {
+      padding:20px 20px 20px 10px;
+    }
+
+    &__quote {
+      max-width: 17px;
+      margin-right: 5px;
+      z-index: 2;
+    }
+
+    &__comment {
+      font-size: 16px;
+    }
+  }
+}
+.carousel{
+  padding: 0 50px;
+  &__item{
+    border: 1px solid #1e91f7;
+    border-top: 0;
+    padding: 30px 80px;
+  }
+  &__title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -1.29px;
+    color: #315479;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  img{
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+  }
+  .owl-nav {
+    button{
+
+      width: 27px;
+      height: 30px;
+      background-color: transparent!important;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .owl-prev{
+      left: 0px;
+      background-image: url("./assets/images/shape_left.png") !important;
+    }
+    .owl-next{
+      right: 0px;
+      background-image: url("./assets/images/shape_right.png") !important;
+    }
+  }
+}

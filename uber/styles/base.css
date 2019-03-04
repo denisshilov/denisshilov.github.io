@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: "kerola", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, ul, ol, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page_wrapper {
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+
+}
+
+[class*='col-'] {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width:768px){
+    .main-baner{
+        overflow: hidden;
+    }
+    .asymmetric-background_white:before{
+        bottom: 30px;!important;
+    }
+    .footer-links__bottom>a{
+        color:#afafaf!important;
+    }
+    .footer-links_social__networks>span{
+        color: #fff!important;
+    }
+    .social-networks__links>a{
+        fill: #afafaf!important;
+        flex: 0 0 8%!important;
+        width: 8%!important;
+    }
+    .footer-links_social__networks{
+        top:58%!important;
+        left: 54%!important;
+        transform: translateX(-50%);
+        color: white!important;
+    }
+    .footer-signature{
+        bottom: 0!important;
+    }
+    .logo-lg__position{
+        left: 11%!important;
+        top:10%!important;
+        transform: translateX(-10%);
+    }
+    .footer-form_md__position{
+        top:32%!important;
+    }
+    .left-position{
+        left: 50%!important;
+        transform: translateX(-50%);
+    }
+    .hidden-block__lg{
+        display: none;
+    }
+    .footer-asymmetric::before {
+        transform: translateX(0) !important;
+        /*ох как я долго думал как сделать так
+                чтобы фон был в 100%,а достаточно было импорт добавить, это рабочий вариант?*/
+    }
+
+    .hidden-block__lg {
+        display: none!important;
+    }
+
+    .col-lg-12 {
+        flex-basis: 99.998%;
+        width: 99.998%;
+    }
+    .content-item-wrapper{
+        padding:0 14px;
+    }
+    .main-paragraph{
+        min-height: 100px!important;
+    }
+    .main-paragraph>h1{
+        font-size: 30px;
+    }
+    .main-baner-link{
+        top: -2%!important;
+    }
+    .page-header{
+        padding-top:10px!important;
+        padding-left:50px;
+        min-height:60px!important;
+    }
+    .main-baner:before{
+        top:40%!important;
+    }
+    .asymmetric-background::before {
+        margin-right: 0 !important;
+        transform: translateX(0) !important;
+    }
+    .baner-img{
+        width: 130%!important;
+    }
+    .asymmetric-header:before{
+        content: '';
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .hidden-block__md{
+        display: none!important;
+    }
+    .col-md-11 {
+        flex-basis: 49.998%;
+        width: 49.998%;
+    }
+    .content-item-wrapper:nth-child(odd) {
+        padding-right: 7px;
+    }
+    .content-item-wrapper:nth-child(even) {
+        padding-left: 7px;
+    }
+    .main-paragraph>h1{
+        font-size: 45px;
+    }
+}
+

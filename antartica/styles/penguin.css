@@ -1,0 +1,236 @@
+.penguin-block {
+    padding: 40px 100px 80px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.penguin-block__title {
+    margin-bottom: 0;
+}
+
+.penguin-block__info-hover {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.penguin-block__hover-element {
+    width: 18px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #0094D0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.penguin-block__hover-element:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0094D0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.penguin-block__hover-description {
+    font-weight: 600;
+    line-height: 1.75;
+    color: #089bd9;
+    margin-left: 7px;
+}
+
+.penguin-block__img-block {
+    position: relative;
+    width: 40%;
+    margin-bottom: 68px;
+}
+
+.penguin-block__img-block:after {
+    content: '';
+    position: absolute;
+    margin-left: 16%;
+    bottom: 3px;
+    width: 82%;
+    height: 14px;
+    opacity: 0.18;
+    filter: blur(5px);
+    background-color: #000;
+}
+
+.penguin-block__img-block > img {
+    width: 100%;
+    display: block;
+}
+
+.penguin-block__label {
+    width: 32px;
+    height: 32px;
+    background: radial-gradient(#085175 30%, rgba(8, 155, 217, 0.75) 30%);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.penguin-block__label_first-position {
+    top: 18%;
+    left: 18%;
+}
+
+.penguin-block__label_second-position {
+    top: 43%;
+    right: 9%;
+}
+
+.penguin-block__label_third-position {
+    bottom: 11%;
+    left: 39%;
+}
+
+.label-position__text {
+    font-weight: 600;
+    line-height: 1.75;
+    color: #505050;
+    width: 150px;
+    display: block;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.label-position__other-text {
+    top: -115px;
+    left: -230px;
+}
+
+.label-position__second-text {
+    top: -125px;
+    right: -110px;
+}
+
+
+.label-position__text:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: -4%;
+    background-color: #089bd9;
+    transition: 0.3s;
+}
+
+.label-position__other-text:before {
+    left: 100%;
+    right: 0;
+}
+
+.label-position__second-text:before {
+    right: 100%;
+    left: 0;
+}
+
+.label-position__text:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #089bd9;
+    transition: 0.3s;
+}
+
+.label-position__other-text:after {
+    bottom: -86px;
+    right: -84px;
+    transform-origin: 100% 100%;
+    transform: rotate(45deg);
+}
+
+.label-position__second-text:after {
+    bottom: -91px;
+    right: 228px;
+    transform-origin: 100% 100%;
+    transform: rotate(130deg);
+}
+
+.penguin-block__label:hover .label-position__text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.penguin-block__label:hover span {
+    transition-delay: 0.6s;
+}
+
+.penguin-block__label:hover .label-position__other-text::before {
+    left: 3%;
+    transition-delay: 0.3s;
+}
+
+.penguin-block__label:hover .label-position__second-text::before {
+    right: 3%;
+    transition-delay: 0.3s;
+}
+
+
+.penguin-block__label:hover .label-position__other-text::after {
+    width: 120px;
+}
+
+.penguin-block__label:hover .label-position__second-text::after {
+    width: 120px;
+}
+@media screen and (max-width: 775px){
+    .penguin-block {
+        padding: 10px 60px 30px 60px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .penguin-block {
+        padding: 10px 15px 30px 15px;
+    }
+
+    .penguin-block__info-hover {
+        margin-bottom: 30px;
+    }
+    .penguin-block__img-block {
+        width: 60%;
+    }
+    .penguin-block__label {
+        width: 25px;
+        height: 25px;
+    }
+    .label-position__text {
+        line-height: 1.25;
+        width: 65px;
+        font-size: 0.8rem;
+    }
+    .label-position__other-text {
+        top: -70px;
+        left: -102px;
+    }
+    .penguin-block__label:hover .label-position__other-text::after {
+        width: 55px;
+    }
+    .label-position__other-text:after {
+        bottom: -40px;
+        right: -38px;
+    }
+    .label-position__second-text {
+        top: -115px;
+        right: -45px;
+    }
+    .penguin-block__label:hover .label-position__second-text::after {
+        width: 83px;
+    }
+    .label-position__second-text:after {
+        bottom: -78px;
+        right: 92px;
+        transform: rotate(108deg);
+    }
+
+}
+

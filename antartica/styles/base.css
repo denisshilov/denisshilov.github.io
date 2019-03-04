@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content-section {
+    max-width: 1170px;
+    width: 100% ;
+    margin: 0 auto ;
+    position: relative;
+}
+.footer-wrapper{
+    max-width: 1170px;
+    width: 100% ;
+    margin: 0 auto ;
+    position: relative;
+}
+.main_description-common{
+    color: #505050;
+    line-height: 1.75;
+}
+.main_title-common{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #4e5665;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+

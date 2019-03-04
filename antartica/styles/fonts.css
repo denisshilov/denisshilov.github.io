@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Sedgwick Ave', cursive;
+    font-weight: 400;
+    src: url("../assets/fonts/SedgwickAve-Regular.ttf");
+}
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    src: url("../assets/fonts/Nunito-Regular.ttf");
+}
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    src: url("../assets/fonts/Nunito-Bold.ttf");
+}

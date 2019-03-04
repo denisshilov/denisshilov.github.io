@@ -1,0 +1,45 @@
+@import "variables.scss";
+@mixin mobile {
+  @media (max-width: #{$xs-screen - 0.1px}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tb-screen - 0.1px}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (max-width: #{$md-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin before{
+  content: '';
+  position: absolute;
+}
+@mixin after{
+  content: '';
+  position: absolute;
+}
+@mixin flex-central-horizontal{
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-start-horizontal{
+  display: flex;
+  justify-content: flex-start;
+}
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+}
+@mixin hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+@mixin visible{
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,135 @@
+.footer-page{
+    min-height: 300px;
+    height:100%;
+    max-height:600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-content{
+    position: relative;
+}
+.left__block{
+}
+.logo-footer{
+    position: absolute;
+    top:22%;
+    left:70px;
+}
+.logo-footer path{
+    fill: #fff;
+}
+.footer-form{
+    width: 80%;
+    position: absolute;
+    top:45%;
+    left:70px;
+}
+.footer-form__text{
+    font-size: 15px;
+    color:#afafaf;
+    margin-bottom: 10px;
+}
+.footer-form__input{
+    position: relative;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.footer-form__input>input{
+    width: 80%;
+    outline-color: #ff9b67;
+    padding-left:10px;
+    font-size: 16px;
+    z-index: 1;
+    background: #272727;
+    border: none;
+    color: #c5c5c5;
+}
+.input-footer__btn{
+    display: inline-block;
+    width: 20%;
+    outline-color: #ff9b67;
+    border: none;
+    cursor: pointer;
+}
+.input-footer__btn>span{
+    color: #000;
+    position: relative;
+    z-index: 1;
+    font-size:18px;
+    font-weight: bold;
+}
+.input-footer__btn::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width:20%;
+    height:0;
+    transition: 0.7s;
+    background-color:#a5a5a5;
+}
+.input-footer__btn:hover::before{
+    height:100%;
+}
+.input-footer__btn:not(:hover)::before{
+    top: 0;
+}
+.footer-signature{
+    position: absolute;
+    bottom:14%;
+    left: 70px;
+}
+.footer-signature>span{
+    font-size: 14px;
+    color: #eeeeee;
+}
+.footer-links_social__networks{
+    display: flex;
+    flex: 0 0 80%;
+    align-items: center;
+    max-height:50px;
+    height: 100%;
+    width:75%;
+    position: absolute;
+    left:50px;
+    top: 50%;
+}
+.footer-links_social__networks>span{
+    font-size: 18px;
+    color: #526572;
+}
+.social-networks__links{
+    width: 80%;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.social-networks__links>a{
+    flex: 0 0 10%;
+    width: 10%;
+    fill: #141414;
+}
+.social-networks__links>a:hover{
+    fill: #42c5d8;
+}
+.footer-links__bottom{
+    position: absolute;
+    bottom: 14%;
+    left:32px;
+    display: flex;
+    justify-content: space-between;
+    flex:0 0 70%;
+    width: 70%;
+}
+.footer-links__bottom>a{
+    color: #526572;
+    font-size: 16px;
+}
+.footer-links__bottom>a:hover{
+    color: #42c5d8;;
+}

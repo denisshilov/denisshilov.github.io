@@ -1,0 +1,103 @@
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    min-height: 140px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-banner{
+    margin-bottom:10px;
+}
+.logo{
+    width: 80px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu-burger{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:-49px;
+    left:-50px;
+}
+.menu-burger__stretchFirst,
+.menu-burger__stretchFirst:before,
+.menu-burger__stretchFirst:after{
+    width:25px;
+    height:3px;
+    background-color: #000;
+    position: absolute;
+    transition:0.7s;
+}
+.menu-burger__stretchFirst:before,
+.menu-burger__stretchFirst:after{
+    content: '';
+}
+.menu-burger__stretchFirst:before{
+    transform: translateY(-6px);
+}
+.menu-burger__stretchFirst:after{
+    transform: translateY(6px);
+}
+.menu-burger__stretchFirst:hover{
+}
+.menu-burger__stretchFirst:hover::before{
+ transform: rotate(25deg);
+    transform-origin:left bottom ;
+    width: 15px;
+}
+.menu-burger__stretchFirst:hover::after{
+    transform: rotate(-25deg);
+    transform-origin:left top ;
+    width: 15px;
+}
+/* Как мне сделать, чтобы при ховере стрелка показала не в левую сторону а в правую?
+Очень долго сидел, но ничего не получилось, и с ротатейт и трансорм ориджен
+ */
+.menu-list{
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+}
+.menu_item{
+    position: relative;
+}
+.menu-link{
+    display: flex;
+}
+
+.menu__link>span{
+    color: #000;
+    padding:15px;
+    font-size: 16px;
+}
+
+.menu__link::before{
+    content: '';
+    position: absolute;
+    bottom:-15px;
+    width:100%;
+    height: 3px;
+    background: #eee;
+    transition:0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu__link:hover::before{
+    background: #000;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.1s;
+}

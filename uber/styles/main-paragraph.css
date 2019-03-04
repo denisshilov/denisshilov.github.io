@@ -1,0 +1,11 @@
+.main-paragraph{
+    flex: 0 0 100%;
+    min-height: 140px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+
+}
+.main-paragraph>h1{
+    font-weight: 100;
+}
