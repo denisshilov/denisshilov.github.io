@@ -190,3 +190,30 @@ a {
     box-shadow: 0 0 15px 5px #000;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .page-wrapper{
+    padding: 20px;
+  }
+  .work-examples{
+    &__content {
+      width: 100%;
+      margin: 20px 0;
+      padding: 0;
+    }
+    &__icon-blocks {
+      width: 90px;
+      height: 90px;
+      background-color: #fff;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__link {
+      width: 100%;
+    }
+  }
+}

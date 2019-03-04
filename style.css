@@ -165,4 +165,28 @@ a {
   box-shadow: 0 0 15px 5px #000;
 }
 
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    padding: 20px;
+  }
+
+  .work-examples__content {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .work-examples__icon-blocks {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+  }
+  .work-examples__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .work-examples__link {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
